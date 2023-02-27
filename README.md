@@ -1,5 +1,5 @@
 # TestAutomation
-[Workshop](https://czm.fel.cvut.cz/cs/student/workshopyls23) v ramci spoluprace s prumyslovumi partnery
+[Workshop](https://czm.fel.cvut.cz/cs/student/workshopyls23) v ramci spoluprace s prumyslovymi partnery
 > * Testing
 >   * popis procesu vyvoje a testovani SW _(flow)_
 >   * popis roli v ramci QA a jejich kontext

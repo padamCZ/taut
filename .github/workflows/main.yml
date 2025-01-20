@@ -1,8 +1,8 @@
 name: Run Robocop
 
 on:
-  pull_request:
-    branches: [ master ]
+  push:
+    branches: [ main ]
 
 jobs:
   build:

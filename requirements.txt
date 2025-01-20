@@ -1,0 +1,29 @@
+###### Requirements without Version Specifiers ######
+RESTinstance
+robotframework-seleniumlibrary
+robotframework-datadriver[XLS]
+webdriver-manager
+#
+###### Requirements with Version Specifiers ######
+robotframework >= 7.1
+robotcode-core >= 0.89.1
+robotcode >= 0.89.1
+robotframework-robocop ~= 5.4
+robotframework-tidy >= 4.14.0
+robotframework-seleniumtestability ~= 2.1
+robotframework-mqttlibrary == 0.7.1.post3
+paho-mqtt == 1.6.1
+robotframework-pdf2textlibrary >= 1.0.1
+robotframework-requests >= 0.9.7
+robotframework-datadriver >= 1.11.2
+robotframework-databaselibrary >= 1.4.4
+pyodbc ~= 5.1
+robotframework-excellib ~= 2.0
+robotframework-pythonlibcore >= 4.4.1
+#
+### examples:
+#   See https://www.python.org/dev/peps/pep-0440/#version-specifiers
+## docopt == 0.6.1             # Version Matching. Must be version 0.6.1
+## keyring >= 4.1.1            # Minimum version 4.1.1
+## coverage != 3.5             # Version Exclusion. Anything except version 3.5
+## Mopidy-Dirble ~= 1.1        # Compatible release. Same as >= 1.1, == 1.*

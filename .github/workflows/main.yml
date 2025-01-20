@@ -6,7 +6,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     # continue even if Robocop returns issues and fails step
     continue-on-error: true
     permissions:
@@ -22,7 +22,7 @@ jobs:
       - name: Run robocop
         run: python -m robocop --reports sarif .
       - name: Upload SARIF file
-        uses: github/codeql-action/upload-sarif@v2
+        uses: github/codeql-action/upload-sarif@v3
         with:
           sarif_file: .sarif.json
           category: robocop

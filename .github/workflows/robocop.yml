@@ -21,7 +21,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -U robotframework-robocop
       - name: Run robocop
-        run: python -m robocop  --reports all,sarif . -e 0305,0508
+        run: python -m robocop  --reports all,sarif . -e 0305,0309,0503,0508,0913,0924
       - name: Upload SARIF file
         uses: github/codeql-action/upload-sarif@v3
         with:

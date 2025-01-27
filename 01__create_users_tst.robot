@@ -5,7 +5,6 @@ Resource            ../../common-general/Keywords/common_kw.robot
 # ---------------------------------------------------------
 Variables            ../DataFiles/user_data.py
 
-
 Test Setup    Login_To_VisionGuard_And_Navigate_To_UserPage
 Test Teardown    Close All Browsers
 
@@ -24,7 +23,7 @@ Test Teardown    Close All Browsers
     FOR    ${user_data}    IN    @{UsersData}
         ${user_name} =    Set Variable    ${user_data}[UserName]
         ${search_user_result} =    Search_User    ${user_name}
-        IF    ${!search_user_result}
+        IF    ${search_user_result}
             Log    \n[ WARN ] : User ${user_name} doesn't found !\n    console=${True}
         ELSE
             Clear_Text_Field_By_Clicking_On_X_Icon

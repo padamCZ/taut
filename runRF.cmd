@@ -25,4 +25,4 @@ robot -A, --argumentfile <path>
 			-s 01__mqtt_system-lifesignal_tst
 			-s 02__mqtt_system-edit_tst
 			-s 03__ui_system-module-check_tst
-			-s 04__mqtt_system-rollback-status_tst
+			-s 04__mqtt_system-rollback-status_ts

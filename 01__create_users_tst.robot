@@ -7,7 +7,7 @@ Variables            ../DataFiles/user_data.py
 
 
 Test Setup    Login_To_VisionGuard_And_Navigate_To_UserPage
-Test Teardown    Close Browser
+Test Teardown    Close All Browsers
 
 
 *** Test Cases ***

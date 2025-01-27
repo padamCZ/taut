@@ -6,7 +6,7 @@ Resource            ../../common-general/Keywords/common_kw.robot
 Variables            ../DataFiles/user_data.py
 
 Test Setup    Login_To_VisionGuard_And_Navigate_To_UserPage
-Test Teardown    Close All Browsers
+Test Teardown    Close Browser
 
 
 *** Test Cases ***
@@ -21,7 +21,7 @@ Test Teardown    Close All Browsers
     [DOCUMENTATION]    [ 5749 ] : Users -> Search User (by Username, Role, Dashboard)
     [TAGS]  Users_SearchUser    TC5749
     FOR    ${user_data}    IN    @{UsersData}
-        ${user_name} =    Set Variable    ${user_data}[UserName]
+        ${user_name} =    Set variable    ${user_data}[UserName]
         ${search_user_result} =    Search_User    ${user_name}
         IF    ${search_user_result}
             Clear_Text_Field_By_Clicking_On_X_Icon

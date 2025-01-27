@@ -1,0 +1,28 @@
+name: Run Robocop
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    # continue even if Robocop returns issues and fails step
+    continue-on-error: false
+    permissions:
+      # required for issues to be recorded
+      security-events: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -U robotframework-robocop
+      - name: Run robocop
+        run: python -m robocop  --reports all,sarif . -e 0305
+      - name: Upload SARIF file
+        uses: github/codeql-action/upload-sarif@v3
+        with:
+          sarif_file: .sarif.json
+          category: robocop

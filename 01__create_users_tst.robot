@@ -17,6 +17,14 @@ Test Teardown    Close Browser
         Create_A_New_User    ${user_data}[UserName]    ${user_data}[UserPWD]    ${user_data}[UserRole]    ${user_data}[UserLang]    ${user_data}[UserColorTheme]
     END
 
+00X__Users - Create Some [l]Users
+    [DOCUMENTATION]    [ XXXX ] : Users -> Create New User (also: 5747, 5760)
+    [TAGS]  Users_CreateNew    TCXXXX    TC5747    TC5760
+    FOR    ${user_data}    IN    @{UsersData}
+        Create_A_New_User    ${user_data}[UserName]    ${user_data}[UserPWD]    ${user_data}[UserRole]    ${user_data}[UserLang]    ${user_data}[UserColorTheme]
+        Should Be True    1== 2
+    END
+
 002__Users - Search User
     [DOCUMENTATION]    [ 5749 ] : Users -> Search User (by Username, Role, Dashboard)
     [TAGS]  Users_SearchUser    TC5749

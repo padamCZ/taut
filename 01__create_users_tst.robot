@@ -1,4 +1,4 @@
-*** Setings ***
+*** Settings ***
 Documentation    TestSuite related to local users
 # ---------------------------------------------------------
 Resource            ../../common-general/Keywords/common_kw.robot

@@ -3,8 +3,8 @@ name: Run Robocop
 on:
   push:
     branches:
-      - '[f,F]eature/**'
-      - '[b,B,h,H][a-z,A-Z][a-z,A-Z]fix/**'
+      - '[fF]eature/**'
+      - '[bBhH][a-zA-Z][a-zA-Z]fix/**'
   pull_request:
     types:
       - assigned
@@ -12,8 +12,8 @@ on:
       - synchronize
       - reopened
     branches:
-      - '[f,F]eature/**'
-      - '[b,B,h,H][a-z,A-Z][a-z,A-Z]fix/**'
+      - '[fF]eature/**'
+      - '[bBhH][a-zA-Z][a-zA-Z]fix/**'
       -  main
 
 jobs:

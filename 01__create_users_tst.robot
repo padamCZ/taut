@@ -7,8 +7,6 @@ Variables            ../DataFiles/user_data.py
 
 Test Setup    Login_To_VisionGuard_And_Navigate_To_UserPage
 Test Teardown    Close Browser
-
-
 *** Test Cases ***
 001__Users - Create New Users
     [DOCUMENTATION]    [ 5745 ] : Users -> Create New User (also: 5747, 5760)
@@ -16,6 +14,7 @@ Test Teardown    Close Browser
     FOR    ${user_data}    IN    @{UsersData}
         Create_A_New_User    ${user_data}[UserName]    ${user_data}[UserPWD]    ${user_data}[UserRole]    ${user_data}[UserLang]    ${user_data}[UserColorTheme]
     END
+
 
 00X__Users - Create Some [l]Users
     [DOCUMENTATION]    [ XXXX ] : Users -> Create New User (also: 5747, 5760)

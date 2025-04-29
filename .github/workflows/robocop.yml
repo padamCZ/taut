@@ -33,7 +33,7 @@ jobs:
           pip install -U robotframework-robocop
       - name: Run robocop
         run: python -m robocop  --reports all,sarif . -e 0305,0309,0503,0508,0913,0924 || true
-        continue-on-error: true
+        continue-on-error: false
       
       # - name: Upload SARIF file
       #  uses: github/codeql-action/upload-sarif@v3

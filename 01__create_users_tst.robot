@@ -3,7 +3,7 @@ Documentation    TestSuite related to local users
 # ---------------------------------------------------------
 Resource            ../../common-general/Keywords/common_kw.robot
 # ---------------------------------------------------------
-Variables            ../DataFiles/user_data.py
+ariables            ../DataFiles/user_data.py
 
 Test Setup    Login_To_VisionGuard_And_Navigate_To_UserPage
 Test Teardown    Close Browser

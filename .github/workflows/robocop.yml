@@ -1,10 +1,6 @@
 name: Run Robocop
 
 on:
-  push:
-    branches:
-      - '[fF]eature/**'
-      - '[bBhH][a-zA-Z][a-zA-Z]fix/**'
   pull_request:
     types:
       - assigned
